@@ -1,0 +1,231 @@
+/* Designe général ---------------------------------------------------------*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url(Images/soleil.jpg);
+	background-size: cover;
+	background-position: center;
+	/* background-image: url(Images/let-there-be-sun.png)*/;
+	/* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)*/ ;
+}
+
+/* Designe Typographique ----------------------------------------------------*/
+
+h1{
+	font-size: 60px;
+	color: black;
+	background-size: 80%;
+	font-family: 'Dancing Script', cursive;
+	/*font-family: 'Playfair Display', serif;*/
+}
+	
+h2{
+	font-size: 60px;
+	color: black;		
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+	color: white;
+}
+
+a{
+	font-family: 'Playfair Display', serif;
+	color: black;
+}
+
+/* Design Menu ------------------------------------------------------------*/
+
+header{
+	width: 100vw;
+	height: 100px;
+	background-color: opacity;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	position: fixed;
+}
+
+.menuFamtome{
+	width: 100vw;
+	height: 100px;
+}
+
+label{
+	font-size: 40px;
+	display: none;
+}
+
+#switch{
+	display: none;
+}
+
+nav a:hover{
+	background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);;
+	color: white;
+}
+
+.boutonMenu{
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+@media (max-width: 700px){
+	header{
+		display: block;
+	}
+
+	h1{
+		float: left;
+	}
+
+	nav{
+		display: none;
+	}
+	
+	label{
+		display: block;
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+	
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	.boutonMenu{
+		width: 100%;
+		background-color: black;
+		color: white;
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid white;
+	}
+}
+
+/* Colonne centrale --------------------------------------------------------*/
+
+.colonneCentrale{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 80vw;
+	min-height: 80vh;
+	margin-left: 10vw;
+	background-color: opacity;
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px){
+	.colonneCentrale{
+		width: 100vw;
+		margin-left: 0px;
+	}
+}
+
+/* Section 1 ----------------------------------------------------------------*/
+
+.imagesSection1{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 14%;
+}
+
+.Titredelapage{
+	margin-bottom: -150px;
+}
+
+@media(max-width: 700px){
+	.imagesSection1{
+		margin-bottom: 550px;
+	}
+}
+
+/* Section 2 ----------------------------------------------------------------*/
+
+.carteSection2{
+	width: 25%;
+	min-height: 30vh;
+	background-color: opacity;
+}
+
+.ImagesSection2{
+	width: 80%;
+	height: 20vh;
+	margin-left: 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.Section2{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-bottom: -300px;
+}
+
+.texteSection2{
+	margin-top: 10px;
+}
+
+@media (max-width: 700px){
+	.Section2{
+		flex-direction: column;
+		margin-top: 550px;
+		margin-bottom: -50px;
+	}
+	.carteSection2{
+		width: 60%;
+	}
+}
+
+/* Section 3 ----------------------------------------------------------------*/
+
+.espaceSection3{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10vh;
+}
+
+.photoSection3{
+	width: 20%;
+	margin-bottom: 50px;
+}
+
+
+.texteSection3{
+	width: 60%;
+	color: white;
+}
+
+/* Footer --------------------------------------------------------------------*/
+
+footer{
+	width: 100vw;
+	height: 80px;
+	background-color: opacity;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+	footer a{
+		color: white;
+		text-decoration: none;
+		margin: 25px;
+}
